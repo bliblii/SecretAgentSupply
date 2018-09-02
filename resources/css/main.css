@@ -62,7 +62,15 @@ ul {
 /******* ITEMS SECTION *******/
 
 .item-box {
-    border: 3px solid black;
+    border: 4px solid black;
+}
+
+.gallery {
+
+}
+
+.gallery img {
+
 }
 
 .gallery h4 {
@@ -73,5 +81,10 @@ ul {
 /******* FOOTER *******/
 
 footer {
+    height: 5rem;
+    padding-left: 6rem;
     background-color: black;
+    text-align: left;
+    line-height: 5rem;
+    text-transform: uppercase;
 }
