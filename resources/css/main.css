@@ -1,6 +1,6 @@
 html,
 body {
-    width: 960px;
+
     font-size: 18px;
     font-family: 'Helvetica', sans-serif;
     color: white;
@@ -31,6 +31,7 @@ body {
     background-image: url("../images/moto.jpeg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     height: 25rem;
 }
 
@@ -68,6 +69,7 @@ ul {
 .gallery {
     margin: 3rem 6rem;
     display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
     justify-content: space-between
 }
@@ -135,4 +137,83 @@ footer {
     text-align: left;
     line-height: 5rem;
     text-transform: uppercase;
+}
+
+
+/*--------------------------------------*/
+
+
+/*-*-* MEDIA QUERIES *-*-*/
+
+@media only screen and (max-width: 790px)
+{
+    .banner img {
+        margin-left: 0;
+    }
+
+    /* a corriger: remplacer nav-btn par menu */
+    .main .container {
+        left: 0;
+    }
+
+    ul,
+    .gallery,
+    .info {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    footer {
+        padding-left: 0;
+    }
+
+    .item-box {
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
+     .main .container {
+        width: 90%;
+        height: 2.8rem;
+        top: 10rem;
+        padding: 1rem 2rem;
+    }
+
+    .main .container h2 {
+        font-size: 0.77rem;
+    }
+
+    .main .container h1 {
+        font-size: 1rem;
+    }
+
+    .item-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .background {
+        height: 15rem;
+        display: flex;
+    }
+
+    .info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .info .container {
+        width: 90%;
+    }
+
+    .location {
+        margin-bottom: 0.5rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+
 }
