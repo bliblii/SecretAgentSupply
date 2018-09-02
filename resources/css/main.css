@@ -9,6 +9,7 @@ body {
 
 /******* HEADER *******/
 
+        /* banner */
 .banner {
     background-color: black;
     display: flex;
@@ -25,6 +26,7 @@ body {
     padding: 0.66rem 0;
 }
 
+        /* background */
 .background {
     background-image: url("../images/moto.jpeg");
     background-repeat: no-repeat;
@@ -48,6 +50,7 @@ body {
     margin-top: 0.25rem;
 }
 
+        /* navigation bar */
 .navigation-bar {
     background-color: firebrick;
 }
@@ -62,8 +65,11 @@ ul {
 
 /******* ITEMS SECTION *******/
 
+        /* gallery */
 .gallery {
+    margin: 3rem 6rem;
     display: flex;
+    overflow: hidden;
 }
 
 .item-box {
@@ -72,13 +78,38 @@ ul {
 }
 
 .gallery img {
-
+   width: 372px;
+   height: auto;
 }
 
 .gallery h4 {
     background-color: black;
+    padding: 0.5rem 0;
+    text-align: center;
 }
 
+        /* merchant informations */
+.info {
+    margin: 3rem 6rem 4rem 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .container {
+    width: 35%;
+    text-align: left;
+}
+
+.info .container h4 {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.info .container p {
+    color: black;
+    padding: 0.3rem 0;
+}
 
 /******* FOOTER *******/
 
