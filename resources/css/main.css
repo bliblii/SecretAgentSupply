@@ -70,16 +70,32 @@ ul {
     margin: 3rem 6rem;
     display: flex;
     overflow: hidden;
+    justify-content: space-between
 }
 
 .item-box {
     width: 30%;
-    border: 4px solid deeppink;
+    border: 4px solid black;
 }
 
-.gallery img {
-   width: 372px;
-   height: auto;
+.item {
+    height: 9rem;
+    margin: 2rem 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.left {
+    background-image: url("../images/pen.png");
+}
+
+.middle {
+    background-image: url("../images/watch.png");
+}
+
+.right {
+    background-image: url("../images/glasses.png");
 }
 
 .gallery h4 {
